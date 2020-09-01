@@ -56,7 +56,7 @@ $(document).ready(function(){
               var listItem = $('li[data-complete-date="' + questaFesta.date + '"]');
               if ( listItem ) {
                 listItem.text( listItem.text() + ' - ' + questaFesta.name );
-                listItem.addClass('festa')
+                listItem.addClass('festa');
               }
             }
           },
@@ -72,6 +72,7 @@ $(document).ready(function(){
 
     function stampaMesiGiorni(data){
         // salvo in una var quanti giorni sono presenti nel mese
+        
         var daysInMonth = data.daysInMonth();
         console.log(daysInMonth)
         monthName.html( data.format('MMMM - YYYY') );
