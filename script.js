@@ -4,12 +4,17 @@ $(document).ready(function(){
     var template = Handlebars.compile(source);
 
     // Variabili globali 
+    
     var prev = $('.prev');
     var next = $('.next');
     var monthName = $('.month');
     var monthDays = $('.month-days');
+    moment.locale('it')
     var startingDate = moment('2018-01-01');
-    console.log(startingDate)
+    var day = startingDate;
+    var mese = startingDate.format('MMMM')
+    console.log(day)
+    console.log(mese)
 
     stampaMesiGiorni(startingDate)
     stampoFeste(startingDate)
