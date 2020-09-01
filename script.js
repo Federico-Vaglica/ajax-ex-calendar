@@ -105,7 +105,7 @@ $(document).ready(function(){
         }
         else {
           startingDate.subtract(1, 'M');
-          monthDays.children().remove();
+          monthDays.empty();//children().remove();
           stampaMesiGiorni(startingDate);
           stampoFeste(startingDate);
          
@@ -120,7 +120,7 @@ $(document).ready(function(){
         }
         else {
           startingDate.add(1, 'M');
-          monthDays.children().remove();
+          monthDays.empty();
           stampaMesiGiorni(startingDate);
           stampoFeste(startingDate);
         }
